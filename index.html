@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <!-- HEAD: META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio web personal donde comparto un poco de información sobre mi, mis pasatiempos, proyectos en los que he trabajado, los cursos que he realizado y lenguajes/herramientas que utilizo."
+    />
+    <meta name="keywords" content="frontendsimon.com, Portfolio.JS, José Simón Ovando Arriagada" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <!-- HEAD: TITLE -->
+    <title>frontendsimon.com | Portfolio.JS</title>
+    <!--  HEAD: FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/fav/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  HEAD: GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  HEAD: MATERIAL SYMBOLS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--  HEAD: STYLES -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- LAYOUT -->
+    <div class="layout">
+      <!-- HEADER -->
+      <header class="header">
+        <!-- HEADER: CONTAINER -->
+        <div class="header__container">
+          <!-- HEADER: LOGO -->
+          <h1 class="header__logo" onclick="scrollToTop()">PORTFOLIO<span>.</span>JS</h1>
+          <!-- NAV -->
+          <nav class="nav">
+            <!-- NAV: DESKTOP -->
+            <div class="nav__desktop">
+              <!-- NAV: UNORDERED LIST -->
+              <ul class="nav__ul">
+                <li><a class="nav__a" href="#about">Sobre mi</a></li>
+                <li><a class="nav__a" href="#hobbies">Pasatiempos</a></li>
+                <li><a class="nav__a" href="#projects">Proyectos</a></li>
+                <li><a class="nav__a" href="#education">Educación</a></li>
+                <li><a class="nav__a" href="#skills">Habilidades</a></li>
+                <li><a class="nav__a" href="#testimonials">Testimonios</a></li>
+              </ul>
+            </div>
+            <!-- NAV: MOBILE -->
+            <div class="nav__mobile">
+              <!-- BURGER -->
+              <button class="burger" onclick="toggleMobileMenu()">
+                <div class="burger__bar"></div>
+                <div class="burger__bar"></div>
+                <div class="burger__bar"></div>
+              </button>
+              <!-- NAV: UNORDERED LIST -->
+              <ul class="nav__ul nav__ul--mobile">
+                <li><a class="nav__a" href="#about" onclick="toggleMobileMenu()">Sobre mi</a></li>
+                <li><a class="nav__a" href="#hobbies" onclick="toggleMobileMenu()">Pasatiempos</a></li>
+                <li><a class="nav__a" href="#projects" onclick="toggleMobileMenu()">Proyectos</a></li>
+                <li><a class="nav__a" href="#education" onclick="toggleMobileMenu()">Educación</a></li>
+                <li><a class="nav__a" href="#skills" onclick="toggleMobileMenu()">Habilidades</a></li>
+                <li><a class="nav__a" href="#testimonials" onclick="toggleMobileMenu()">Testimonios</a></li>
+              </ul>
+            </div>
+            <!-- NAV: OVERLAY -->
+            <div class="nav__overlay"></div>
+          </nav>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+          <!-- HERO: CONTENT -->
+          <div class="hero__content">
+            <!-- HERO: EMOJI -->
+            <p class="hero__emoji">👋</p>
+            <!-- HERO: TITLE -->
+            <h2 class="hero__title">¡Hola, soy José Simón!</h2>
+            <!-- HERO: SUBTITLE -->
+            <h3 class="hero__subtitle">Desarrollador Frontend</h3>
+            <!-- HERO: DESCRIPTION -->
+            <div class="hero__description">
+              <p>Disfruto creando páginas</p>
+              <p>web visualmente atractivas</p>
+            </div>
+            <a class="hero__email" href="mailto: contact@frontendsimon.com">contact@frontendsimon.com</a>
+            <!-- HERO: RESUME -->
+            <a class="hero__resume" href="./assets/cv.pdf" target="_blank"
+              ><span class="material-symbols-outlined">download</span>
+              <p>Descargar CV</p>
+            </a>
+          </div>
+          <!-- HERO: AVATAR -->
+          <figure class="hero__avatar">
+            <img src="./assets/img/me.webp" alt="Avatar" draggable="false" />
+          </figure>
+        </section>
+        <!-- ABOUT -->
+        <section class="about" id="about">
+          <!-- ABOUT: TITLE -->
+          <h2 class="about__title">I. Sobre mi</h2>
+          <!-- ABOUT: SHOWCASE -->
+          <div class="about__showcase">
+            <!-- FACT -->
+            <div class="fact">
+              <p>🕺 Mi nombre es José<span>Simón Ovando Arriagada</span></p>
+            </div>
+            <!-- FACT -->
+            <div class="fact">
+              <p>🎂 Nací el 17 de Octubre<span>de 1986 en Lund, Suecia</span></p>
+            </div>
+            <!-- FACT -->
+            <div class="fact">
+              <p>🧒 Desde niño me interesé en<span>Internet y las páginas web</span></p>
+            </div>
+            <!-- FACT -->
+            <div class="fact">
+              <p>🧑‍🎓 En 2022 cursé Desarrollo<span>Frontend React en Coderhouse</span></p>
+            </div>
+            <!-- FACT -->
+            <div class="fact">
+              <p>🧑‍💻 En 2023 cursé el programa<span>ONE de Oracle y Alura Latam</span></p>
+            </div>
+            <!-- FACT -->
+            <div class="fact">
+              <p>🚀 En 2023 comencé a trabajar<span>como Desarrollador Freelance</span></p>
+            </div>
+          </div>
+        </section>
+        <!-- HOBBIES -->
+        <section class="hobbies" id="hobbies">
+          <!-- HOBBIES: TITLE -->
+          <h2 class="hobbies__title">II. Pasatiempos</h2>
+          <!-- HOBBIES: SHOWCASE -->
+          <div class="hobbies__showcase">
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>🫂 Compartir con mis amigos</p>
+            </div>
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>🎙️ Hacer karaoke</p>
+            </div>
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>🎸 Tocar bajo eléctrico</p>
+            </div>
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>💭 Leer cómics</p>
+            </div>
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>📺 Ver series</p>
+            </div>
+            <!-- HOBBY -->
+            <div class="hobby">
+              <p>🕹️ Jugar videojuegos</p>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+          <!-- PROJECTS: TITLE -->
+          <h2 class="projects__title">III. Proyectos</h2>
+          <!-- PROJECTS: SHOWCASE -->
+          <div class="projects__showcase">
+            <!-- PROJECT: BARRABASE -->
+            <div class="project">
+              <img src="./assets/img/projects/barrabase.webp" alt="Barrabase" class="project__img" />
+              <div class="project__content">
+                <h3 class="project__title">Barrabase</h3>
+                <h4 class="project__type">Freelance</h4>
+                <div class="project__features">
+                  <p>👉 HTML, CSS y JavaScript</p>
+                  <p>👉 Full Responsive ~ 1080p</p>
+                </div>
+                <!--
+                <p class="project__more">+ Ver más</p>
+                -->
+                <a href="https://ligabarrabase.com/" target="_blank" class="project__deploy">
+                  <span class="material-symbols-outlined">link</span>
+                  <p>Visitar</p>
+                </a>
+              </div>
+            </div>
+            <!-- PROJECT: CRIMSON GAMES -->
+            <div class="project">
+              <img src="./assets/img/projects/crimson-games.webp" alt="Crimson Games" class="project__img" />
+              <div class="project__content">
+                <h3 class="project__title">Crimson Games</h3>
+                <h4 class="project__type">Personal</h4>
+                <div class="project__features">
+                  <p>👉 HTML, SCSS y JavaScript</p>
+                  <p>👉 Full Responsive ~ 1080p</p>
+                </div>
+                <!--
+                <p class="project__more">+ Ver más</p>
+                -->
+                <a href="https://jsovandoarriagada.github.io/crimson-games/" target="_blank" class="project__deploy">
+                  <span class="material-symbols-outlined">link</span>
+                  <p>Visitar</p>
+                </a>
+              </div>
+            </div>
+            <!-- PROJECT: BATTLE.NET -->
+            <div class="project">
+              <img src="./assets/img/projects/battle.net.webp" alt="Battle.net" class="project__img" />
+              <div class="project__content">
+                <h3 class="project__title">Battle.net</h3>
+                <h4 class="project__type">Personal</h4>
+                <div class="project__features">
+                  <p>👉 HTML, SCSS y JavaScript</p>
+                  <p>👉 Full Responsive ~ 1080p</p>
+                </div>
+                <!--
+                <p class="project__more">+ Ver más</p>
+                -->
+                <a href="https://jsovandoarriagada.github.io/battle.net/" target="_blank" class="project__deploy">
+                  <span class="material-symbols-outlined">link</span>
+                  <p>Visitar</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- EDUCATION -->
+        <section class="education" id="education">
+          <!-- EDUCATION: TITLE -->
+          <h2 class="education__title">IV. Educación</h2>
+          <!-- EDUCATION: CATEGORIES -->
+          <div class="education__categories">
+            <!-- EDUCATION: CATEGORIES -- ALURA LATAM -->
+            <div class="education__categories--alura active">
+              <img src="./assets/img/education/alura/alura.webp" alt="Alura Latam" />
+            </div>
+            <!-- EDUCATION: CATEGORIES -- CODERHOUSE -->
+            <div class="education__categories--coderhouse">
+              <img src="./assets/img/education/coderhouse/coderhouse.webp" alt="Coderhouse" />
+            </div>
+            <!-- EDUCATION: CATEGORIES -- LINKEDIN LEARNING -->
+            <div class="education__categories--linkedin">
+              <img src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" />
+            </div>
+            <!-- EDUCATION: CATEGORIES -- UDEMY -->
+            <div class="education__categories--udemy">
+              <img src="./assets/img/education/udemy/udemy.webp" alt="Udemy" />
+            </div>
+          </div>
+          <!-- EDUCATION: SHOWCASE -- ALURA LATAM -->
+          <div class="education__showcase education__showcase--alura selected">
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">React</p>
+                <p class="course__date">06-09-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/react.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Front-End</p>
+                <p class="course__date">10-07-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/front-end.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Emprendimiento</p>
+                <p class="course__date">29-06-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/emprendimiento.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">HTML y CSS</p>
+                <p class="course__date">15-06-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/html-and-css.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Business Agility</p>
+                <p class="course__date">10-06-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/business-agility.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Programación</p>
+                <p class="course__date">21-04-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/programacion.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/alura/alura.webp" alt="Alura Latam" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Desarrollo Personal</p>
+                <p class="course__date">06-04-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/alura/desarrollo-personal.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+          </div>
+          <!-- EDUCATION: SHOWCASE -- CODERHOUSE -->
+          <div class="education__showcase education__showcase--coderhouse">
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/coderhouse/coderhouse.webp" alt="Coderhouse" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">React JS</p>
+                <p class="course__date">29-09-2022</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/coderhouse/react-js.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/coderhouse/coderhouse.webp" alt="Coderhouse" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">JavaScript</p>
+                <p class="course__date">12-07-2022</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/coderhouse/javascript.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/coderhouse/coderhouse.webp" alt="Coderhouse" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Desarrollo Web</p>
+                <p class="course__date">03-05-2022</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/coderhouse/desarrollo-web.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+          </div>
+          <!-- EDUCATION: SHOWCASE -- LINKEDIN LEARNING -->
+          <div class="education__showcase education__showcase--linkedin">
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">JavaScript</p>
+                <p class="course__date">04-04-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/become-a-javascript-developer.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">RegEx</p>
+                <p class="course__date">12-03-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/learning-regular-expressions.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">UX</p>
+                <p class="course__date">11-02-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/become-a-user-experience-designer.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Sass</p>
+                <p class="course__date">03-02-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/sass-essential-training.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">TypeScript</p>
+                <p class="course__date">03-02-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/typescript-essential-training.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">JSON</p>
+                <p class="course__date">27-01-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/json-essential-training.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Bootstrap 5</p>
+                <p class="course__date">27-01-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/bootstrap-5-essential-training.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Tailwind</p>
+                <p class="course__date">24-01-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/tailwind-css-3-essential-training.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/linkedin/linkedin.webp" alt="LinkedIn Learning" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Front End</p>
+                <p class="course__date">19-01-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/linkedin/explore-a-career-in-front-end-web-development.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+          </div>
+          <!-- EDUCATION: SHOWCASE -- UDEMY -->
+          <div class="education__showcase education__showcase--udemy">
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/udemy/udemy.webp" alt="Udemy" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">JavaScript</p>
+                <p class="course__date">11-12-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/udemy/javascript.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/udemy/udemy.webp" alt="Udemy" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">CSS Avanzado</p>
+                <p class="course__date">14-01-2023</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/udemy/advanced-css-and-sass.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/udemy/udemy.webp" alt="Udemy" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">HTML y CSS</p>
+                <p class="course__date">19-04-2021</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/udemy/html-css.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/udemy/udemy.webp" alt="Udemy" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Git y GitHub</p>
+                <p class="course__date">08-05-2021</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/udemy/git-and-github.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+            <!-- COURSE -->
+            <div class="course">
+              <img class="course__img" src="./assets/img/education/udemy/udemy.webp" alt="Udemy" draggable="false" />
+              <div class="course__content">
+                <p class="course__name">Pseudocódigo</p>
+                <p class="course__date">15-02-2021</p>
+              </div>
+              <a class="course__certificate" href="./assets/img/education/udemy/pseudocode.webp" download>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+          <!-- SKILLS: TITLE -->
+          <h2 class="skills__title">V. Habilidades</h2>
+          <!-- SKILLS: SHOWCASE -->
+          <div class="skills__showcase">
+            <!-- SKILLSET: LANGUAGES -->
+            <div class="skillset">
+              <!-- SKILLSET: TITLE -->
+              <div class="skillset__title">Lenguajes</div>
+              <!-- SKILLSET: CONTAINER -->
+              <div class="skillset__container">
+                <div class="skillset__container--left">
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">HTML<span>Intermedio</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">CSS<span>Intermedio</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">Sass<span>Intermedio</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">JavaScript<span>Intermedio</span></p>
+                  </div>
+                </div>
+                <div class="skillset__container--right">
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">JSON<span>Intermedio</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">Tailwind<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">Bootstrap<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">📙</p>
+                    <p class="skill__name">React<span>Básico</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SKILLSET: TOOLS -->
+            <div class="skillset">
+              <!-- SKILLSET: TOOLS -->
+              <div class="skillset__title">Herramientas</div>
+              <!-- SKILLSET: CONTAINER -->
+              <div class="skillset__container">
+                <div class="skillset__container--left">
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Terminal<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Google<span>Intermedio</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Figma<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Git<span>Básico</span></p>
+                  </div>
+                </div>
+                <div class="skillset__container--right">
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">GitHub<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Photoshop<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Postman<span>Básico</span></p>
+                  </div>
+                  <!-- SKILL -->
+                  <div class="skill">
+                    <p class="skill__emoji">🛠️</p>
+                    <p class="skill__name">Trello<span>Intermedio</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="testimonials" id="testimonials">
+          <!-- TESTIMONIALS: TITLE -->
+          <h3 class="testimonials__title">VI. Testimonios</h3>
+          <!-- TESTIMONIALS: SHOWCASE -->
+          <div class="testimonials__showcase">
+            <div class="testimonials--left">
+              <!-- TESTIMONIAL -->
+              <div class="testimonial">
+                <img src="./assets/img/testimonials/eliseo-cutrona.webp" alt="Eliseo Cutrona" class="testimonial__avatar" />
+                <div class="testimonial__content">
+                  <p class="testimonial__author">Eliseo Cutrona<span>Compañero</span></p>
+                  <p class="testimonial__detail">
+                    "Simón es una persona dedicada a completar los objetivos que se le presentan, incluso dentro de la cursada que realice con él en Coderhouse
+                    de Desarrollo web, estaba dispuesto a ayudar a sus compañeros de clase y ofrecer soluciones, es una persona ideal para trabajar en equipo y
+                    una característica que veo en él, es que está centrado en los detalles y entender el funcionamiento de las cosas."
+                  </p>
+                </div>
+              </div>
+              <!-- TESTIMONIAL -->
+              <div class="testimonial">
+                <img src="./assets/img/testimonials/juan-magos.webp" alt="Juan Magos" class="testimonial__avatar" />
+                <div class="testimonial__content">
+                  <p class="testimonial__author">Juan Magos<span>Profesor</span></p>
+                  <p class="testimonial__detail">
+                    "José fue un estudiante sobresaliente en cuanto a habilidades y cumplimiento. Su proyecto final demuestra un entendimiento completo de los
+                    temas dados sobre la librería React JS y otras habilidades técnicas. Se nota su compromiso y pasión por el código, lo recomiendo ampliamente
+                    como profesional para el desarrollo web."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials--right">
+              <!-- TESTIMONIAL -->
+              <div class="testimonial">
+                <img src="./assets/img/testimonials/enzo-agu.webp" alt="Enzo Agú" class="testimonial__avatar" />
+                <div class="testimonial__content">
+                  <p class="testimonial__author">Enzo Agú<span>Tutor</span></p>
+                  <p class="testimonial__detail">
+                    "Excelente estudiante en cuanto a su desarrollo durante el curso de React JS. Siempre cumpliendo en tiempo y forma las entregas requeridas y
+                    aplicando los conceptos prácticos de manera óptima en base a rúbricas evaluativas."
+                  </p>
+                </div>
+              </div>
+              <!-- TESTIMONIAL -->
+              <div class="testimonial">
+                <img src="./assets/img/testimonials/lautaro-rocha.webp" alt="Lautaro Rocha" class="testimonial__avatar" />
+                <div class="testimonial__content">
+                  <p class="testimonial__author">Lautaro Rocha<span>Compañero</span></p>
+                  <p class="testimonial__detail">
+                    "Simón fue desde el día uno un gran compañero, dispuesto a compartir su conocimiento y ayudar a todos por igual. además nos hicimos amigos
+                    gracias a que es una persona súper amable y con un gran sentido del humor. Realmente creo que sería una gran adición a cualquier equipo!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="testimonials__advertise" href="https://www.linkedin.com/in/jsovandoarriagada/" target="_blank">> Verificar autenticidad</a>
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <h3>Hecho con ❤️ por <span>José Simón Ovando A</span>.</h3>
+      </footer>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
